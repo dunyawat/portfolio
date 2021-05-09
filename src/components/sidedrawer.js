@@ -12,7 +12,7 @@ class SideDrawer extends Component{
                 <button className="close" onClick={this.props.click}>&#215;</button>
                 <div className="profile-mobile">
                     <div className="profile-mobile__photo">
-                        <img src="/images/profile.jfif" />
+                        <img src="/images/profile.jpg" />
                     </div>
                     <div className="profile-mobile__detail">
                         <div><h3>Dunyawat Hongsupangpan</h3></div>

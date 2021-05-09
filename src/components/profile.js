@@ -6,7 +6,7 @@ class Profile extends Component {
         return(
             <div className="profile">
                 <div className="profile__photo">
-                    <img src="/images/profile.jfif" />
+                    <img src="/images/profile.jpg" />
                 </div>
                 <div className="profile__detail">
                     <div><h3>Dunyawat Hongsupangpan</h3></div>
