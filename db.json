@@ -1,0 +1,29 @@
+{
+  "registers": [
+    {
+      "registerName": "ดุลยวัต",
+      "registerNumber": "0917799179",
+      "registerSchool": "เดอะมอล",
+      "registerProvince": "ราชบุรี",
+      "id": 1
+    }
+  ],
+  "helps": [
+    {
+      "helpName": "ดุลยวัต",
+      "helpNumber": "ดกหกหดกด",
+      "helpEmail": "tae@daas.com",
+      "helpText": "ljlijlijil",
+      "id": 1
+    }
+  ],
+  "helps-test": [
+    {
+      "helpName": "ดุลยวัต",
+      "helpNumber": "ฏฤฆฏฤฆฏฤ",
+      "helpEmail": "tae@daas.com",
+      "helpText": "jklhfdljf",
+      "id": 1
+    }
+  ]
+}

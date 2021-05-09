@@ -1,0 +1,35 @@
+.resume{
+    padding: 15px;
+}
+
+@media (min-width:768px){
+    .resume-box{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .resume{
+            padding: 25px;
+
+            h1{
+                margin-bottom: 5px;
+                font-size: 35px;
+            }
+
+            .border{
+                width: 50px;
+                height: 5px;
+                background-color: rgb(15, 71, 175);
+                margin-bottom: 5px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            .resume-content{
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.toggle-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.toggle-button:focus{
+    outline: none;
+}
+
+.toggle-button__line{
+    width: 30px;
+    height: 2px;
+    background: white;
+}
+
+.side-drawer{
+    height: 100%;
+    background: white;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+
+
+    .close{
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        border: none;
+        background-color: transparent;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .close:focus{
+        outline: none;
+    }
+
+    ul{
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li{
+        margin: 0.5rem 0;
+    }
+
+    a{
+        color: green;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
+
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.3);
+    z-index: 100;
+}
+
+.side-drawer{
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+}
+
+.side-drawer.open{
+    transform: translateX(0);
+}
+
+.toolbar__toggle-button{
+    justify-self:start;
+}
+
+@media (max-width:768px){
+    .toolbar__logo{
+        position: absolute;
+        left: 50%;
+        transform:translateX(-50%)
+        
+    }
+}
+
+@media (min-width:769px){
+    .toolbar__toggle-button{
+        display: none;
+    }
+
+    .toolbar__logo{
+        margin-left: 0;
+    }
+}
+
+

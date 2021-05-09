@@ -1,0 +1,110 @@
+.portfolio{
+    padding: 15px;
+}
+.portfolio-content{
+   background-color:#ddd;
+   padding:15px;
+   border-radius: 20px;
+}
+
+.portfolio-content{
+    display: flex;
+    flex-direction: column;
+
+    > div {
+        flex: 0 0 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a{
+            display: block;
+            width: 90%;
+            text-align: center;
+            
+        }
+
+        button{
+            cursor: pointer;
+            width:100%;
+            height: 150px;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 5px;
+            padding: 0;
+
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+        }
+
+        button:focus{
+            outline: none;
+        }
+    }
+
+    > div:not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width:576px){
+    .portfolio-content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        overflow-y: auto;
+
+        > div {
+            flex: 0 0 48%;
+        }
+    }
+}
+
+@media (min-width:768px){
+    .portfolio-box{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        .portfolio{
+            flex: 0 0 20%;
+            padding: 25px;
+
+            h1{
+                margin-bottom: 5px;
+                font-size: 35px;
+            }
+
+            .border{
+                width: 50px;
+                height: 5px;
+                background-color: rgb(15, 71, 175);
+                margin-bottom: 5px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+        }
+
+        .portfolio-content{
+            flex:0 0 80%;
+            padding: 25px;
+            background-color: #ddd;
+            border-radius: 20px;
+        }
+    }
+}
+
+@media (min-width:992px){
+    .portfolio-content{
+        justify-content: start;
+        > div {
+            flex: 0 0 33%;
+        }
+    }
+}
