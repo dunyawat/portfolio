@@ -21,7 +21,7 @@ class Portfolio extends Component {
                             <p>SCSS</p>
                         </div>
                         <div>
-                            <a href="https://salebox.io/en/" target="_blank"><button className="portfolio-button"><img src="images/salebox.png" /></button></a>
+                            <a href="https://salebox.io/" target="_blank"><button className="portfolio-button"><img src="images/salebox.png" /></button></a>
                             <p>HTML + SCSS + JS + jQuery</p>
                         </div>
                         <div>
